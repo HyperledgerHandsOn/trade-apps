@@ -1,0 +1,44 @@
+{
+  "name": "trade-exporter-rest",
+  "version": "1.0.0",
+  "author": "Luc Desrosiers",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/Hyperledger-Book-2nd-Edition/trade-apps",
+  "description": "A REST gateway for the Exporter accessing the network using node.js SDK APIs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "test": "mocha ./src/**/*.spec.js"
+  },
+  "keywords": [
+    "fabric-client sample app",
+    "Trade Exporter node sample",
+    "v2.0 fabric nodesdk sample"
+  ],
+  "engines": {
+    "node": ">=10.15.3 <13.0"
+  },
+  "devDependencies": {
+    "supertest": "^4.0.2",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "express-bearer-token": "^2.1.0",
+    "express-jwt": "^5.1.0",
+    "express-session": "^1.15.2",
+    "fabric-ca-client": "^2.1.2",
+    "fabric-network": "^2.1.2",
+    "jsonwebtoken": "^7.3.0",
+    "log4js": "^0.6.38",
+    "long": "^4.0.0"
+  }
+}

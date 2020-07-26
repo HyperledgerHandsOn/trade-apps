@@ -1,0 +1,1 @@
+curl -X POST http://localhost:5000/issueLC -H "content-type: application/x-www-form-urlencoded" -H "authorization: Bearer $JWT_IMPBANK" -d 'tradeId=trade-12&lcId=lc-12&expirationDate=11/30/2020&requiredDocs=B/L,E/L' ; echo

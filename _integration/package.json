@@ -1,0 +1,42 @@
+{
+  "name": "trade-exporter-rest",
+  "version": "1.0.0",
+  "author": "Luc Desrosiers",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/Hyperledger-Book-2nd-Edition/trade-apps",
+  "description": "An integration test suite for the trade finance network.",
+  "scripts": {
+    "e2e": "mocha ./src/**/*.js"
+  },
+  "keywords": [
+    "fabric-client sample app",
+    "Trade integration test node sample",
+    "v2.0 fabric nodesdk sample"
+  ],
+  "engines": {
+    "node": ">=10.15.3 <11.0"
+  },
+  "devDependencies": {
+    "supertest": "^4.0.2",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.1",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "express-bearer-token": "^2.1.0",
+    "express-jwt": "^5.1.0",
+    "express-session": "^1.15.2",
+    "fabric-ca-client": "^1.4.8",
+    "fabric-client": "^1.4.8",
+    "fabric-network": "^1.4.8",
+    "jsonwebtoken": "^7.3.0",
+    "log4js": "^0.6.38"
+  }
+}

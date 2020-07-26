@@ -1,0 +1,1 @@
+curl -X POST http://localhost:5000/requestTrade -H "content-type: application/x-www-form-urlencoded" -H "authorization: Bearer ${JWT_IMP}" -d 'tradeId=trade-34&amount=50000&descriptionOfGoods=Metal&exporterMSP=ExportingEntityOrgMSP' ; echo

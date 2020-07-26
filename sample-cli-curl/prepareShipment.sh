@@ -1,0 +1,1 @@
+curl -X GET http://localhost:4000/shipment/trade-12/prepare -H "content-type: application/json" -H "authorization: Bearer ${JWT_EXP}" -d '{ "tradeId": "trade-12", "amount": "90000", "descriptionOfGoods": "Wood", "carrierMSP": "CarrierOrgMSP", "beneficiary": "ImporterOrgMSP" }' ; echo

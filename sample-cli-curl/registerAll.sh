@@ -1,0 +1,6 @@
+curl -X POST http://localhost:7000/register -H "content-type: application/x-www-form-urlencoded" -d 'registrarUser=admin&registrarPassword=adminpw&username=carrier&password=password&role=client' ; echo
+curl -X POST http://localhost:6000/register -H "content-type: application/x-www-form-urlencoded" -d 'registrarUser=admin&registrarPassword=adminpw&username=regulator&password=password&role=client' ; echo
+curl -X POST http://localhost:5000/register -H "content-type: application/x-www-form-urlencoded" -d 'registrarUser=admin&registrarPassword=adminpw&username=importer&password=password&role=client' ; echo
+curl -X POST http://localhost:5000/register -H "content-type: application/x-www-form-urlencoded" -d 'registrarUser=admin&registrarPassword=adminpw&username=ib&password=password&role=banker' ; echo
+curl -X POST http://localhost:4000/register -H "content-type: application/x-www-form-urlencoded" -d 'registrarUser=admin&registrarPassword=adminpw&username=exporter&password=password&role=client' ; echo
+curl -X POST http://localhost:4000/register -H "content-type: application/x-www-form-urlencoded" -d 'registrarUser=admin&registrarPassword=adminpw&username=eb&password=password&role=banker' ; echo

@@ -1,0 +1,18 @@
+# In this example, README.md and build files are part 
+# of the default match. Default owners if nothing else matches.
+# Any changes to the build process should be reviewed by everyone
+* @ldesrosi @rama @P-Novotny
+Makefile @ldesrosi @rama @P-Novotny
+
+# Code related to exporter should be validated by Rama.
+/exporter/ @rama
+
+# Code related to Importer should be validated by @ldesrosi.
+/importer/ @ldesrosi
+
+# Code related to Regulator should be validated by @P-Novotny.
+/regulator/ @P-Novotny
+
+# Code related to Carrier should be validated by @ldesrosi.
+/carrier/ @ldesrosi
+
