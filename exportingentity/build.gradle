@@ -26,7 +26,7 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.hyperledger.fabric:fabric-gateway-java:2.0.0'
+	implementation 'org.hyperledger.fabric:fabric-gateway-java:2.2.0'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.session:spring-session-core'
 	compile group: 'org.json', name: 'json', version: '20180813'

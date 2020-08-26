@@ -19,8 +19,9 @@ class ShipmentManager {
 		// Default path '/config' applies when running REST server within docker.
         this.configPath = process.env.CONFIG_PATH || '/config';
         this.orgName = process.env.ORG_NAME || 'exporterorg';
+        this.orgMSP = process.env.ORG_MSP || 'ExporterOrgMSP';
 
-		this.walletDirectoryPath = path.join(this.configPath, 'wallets', this.orgName);
+        this.walletDirectoryPath = path.join(this.configPath, 'wallets', this.orgName, this.orgMSP);
         this.connProfilePath = path.join(this.configPath, 'gateways', this.orgName, 'connection.json');
         const data = fs.readFileSync(this.connProfilePath, 'utf8');
         this.connectionProfile = JSON.parse(data);

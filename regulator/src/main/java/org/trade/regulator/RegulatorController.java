@@ -188,4 +188,24 @@ public class RegulatorController {
                                                     true, "listTrade");
         }
 
+        @RequestMapping(value = "/getTradesByRange", method = RequestMethod.GET)
+        public String getTradesByRange(@RequestHeader Map<String, String> headers, String fromTradeId, String toTradeId) {
+                String username = securityUtils.getUserNameFromTokenHeaders(headers);
+                if (username == null) {
+                        return errorObj("Unable to get username from headers");
+                }
+                return FabricNetworkUtils.invokeContract(username, FabricNetworkUtils.tradeChannel, FabricNetworkUtils.tradeContractId,
+                                                    true, "getTradesByRange", fromTradeId, toTradeId);
+        }
+
+        @RequestMapping(value = "/getTradeHistory", method = RequestMethod.GET)
+        public String getTradeHistory(@RequestHeader Map<String, String> headers, String tradeId) {
+                String username = securityUtils.getUserNameFromTokenHeaders(headers);
+                if (username == null) {
+                        return errorObj("Unable to get username from headers");
+                }
+                return FabricNetworkUtils.invokeContract(username, FabricNetworkUtils.tradeChannel, FabricNetworkUtils.tradeContractId,
+                                                    true, "getTradeHistory", tradeId);
+        }
+
 }

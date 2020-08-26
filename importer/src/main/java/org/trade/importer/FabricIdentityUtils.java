@@ -93,7 +93,7 @@ public class FabricIdentityUtils {
         NetworkConfig orgNetworkConfig;
         try {
             orgNetworkConfig = NetworkConfig.fromJsonFile(Paths.get(FabricNetworkUtils.connectionProfilesBaseDir, FabricNetworkUtils.connectionProfileJson).toFile());
-        } catch (org.hyperledger.fabric.sdk.exception.InvalidArgumentException | NetworkConfigurationException | IOException e) {
+        } catch (NetworkConfigurationException | IOException e) {
             e.printStackTrace();
             return null;
         }
