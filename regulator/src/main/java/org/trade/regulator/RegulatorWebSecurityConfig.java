@@ -136,7 +136,7 @@ public class RegulatorWebSecurityConfig extends WebSecurityConfigurerAdapter {
 		httpSecurity.csrf().disable()
 			// dont authenticate this particular request
 			.authorizeRequests().antMatchers("/register", "/login").permitAll()
-			.antMatchers("/issueEL", "/getTrade", "/getTradeStatus", "/getEL", "/getELStatus", "/listTrades").hasRole(SecurityUtils.clientRole)
+			.antMatchers("/issueEL", "/getTrade", "/getTradeStatus", "/getEL", "/getELStatus", "/listTrades", "/getTradesByRange", "/getTradeHistory").hasRole(SecurityUtils.clientRole)
 			// all other requests need to be authenticated
 			.anyRequest().authenticated().and()
 			// make sure we use stateless session; session won't be used to store user's state.

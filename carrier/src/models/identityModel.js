@@ -25,7 +25,7 @@ class IdentityManager {
         this.orgName = process.env.ORG_NAME || 'carrierorg';
         this.orgMSP = process.env.ORG_MSP || 'CarrierOrgMSP';
 
-		this.walletDirectoryPath = path.join(this.configPath, 'wallets', this.orgName, this.orgMSP);
+        this.walletDirectoryPath = path.join(this.configPath, 'wallets', this.orgName, this.orgMSP);
         if (!fs.existsSync(this.walletDirectoryPath)) {
             fs.mkdirSync(this.walletDirectoryPath);
         }
