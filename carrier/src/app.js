@@ -32,7 +32,9 @@ app.use(bodyParser.urlencoded({
 // set secret variable
 app.set('secret', 'fabrichacker');
 app.use(expressJWT({
-    secret: 'fabrichacker'
+    secret: 'fabrichacker',
+    userProperty: 'auth',
+    algorithms: ['HS256'],
 }).unless({
     path: ['/login','/register']
 }));
