@@ -1,6 +1,6 @@
 # Trading Apps Repository  
   
-[![Build Status](https://travis.ibm.com/Hyperledger-Book-2nd-Edition/trade-apps.svg?token=sQbGqm1RNTX4ZceCsxf9&branch=master)](https://travis.ibm.com/Hyperledger-Book-2nd-Edition/trade-apps)
+[![Build Status](https://travis-ci.com/HyperledgerHandsOn/trade-apps.svg?branch=master)](https://travis-ci.com/HyperledgerHandsOn/trade-apps)
 
 This repository contains the REST servers used to transact and query the trade network.  
 
